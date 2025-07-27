@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foto Upload | Yipzzi Community</title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <h1>📸 Upload je Moment</h1>
+    <form id="uploadForm">
+      <input type="file" id="photo" name="photo" required />
+      <textarea id="description" name="description" placeholder="Beschrijving..." required></textarea>
+      <input type="text" id="discord_tag" name="discord_tag" placeholder="Jouw Discord tag" required />
+      
+      <div class="tags">
+        <label><input type="checkbox" name="tags" value="#highlight" /> #highlight</label>
+        <label><input type="checkbox" name="tags" value="#lol" /> #lol</label>
+        <label><input type="checkbox" name="tags" value="#gamen" /> #gamen</label>
+        <label><input type="checkbox" name="tags" value="#prank" /> #prank</label>
+        <label><input type="checkbox" name="tags" value="#iedereenmoethetzien" /> #iedereenmoethetzien</label>
+      </div>
+
+      <button type="submit">Uploaden</button>
+    </form>
+    <p id="status"></p>
+  </div>
+
+  <script src="upload.js"></script>
+</body>
+</html>
